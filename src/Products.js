@@ -1,6 +1,6 @@
 const Products = () => {
     return (
-        <ul className='drop-down-menu'>
+        <ul className='drop-down-menu products'>
             <li>Overview</li>
             <li>Pricing</li>
             <li>Marketplace</li>

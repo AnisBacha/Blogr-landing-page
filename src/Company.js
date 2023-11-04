@@ -1,6 +1,6 @@
 const Company = () => {
     return (
-        <ul className='drop-down-menu'>
+        <ul className='drop-down-menu company'>
             <li>About</li>
             <li>Team</li>
             <li>Blog</li>

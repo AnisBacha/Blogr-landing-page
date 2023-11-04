@@ -159,7 +159,7 @@ body{
 
 
 .header__navbar,
-.header__navbar ul{
+.header__navbar .header__list{
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -260,7 +260,7 @@ hr{
     box-shadow: none;
     position: static;
   }
-  .header__navbar ul{
+  .header__navbar .header__list{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
@@ -345,6 +345,24 @@ hr{
   .footer__logo{
     margin-block-start: 1.5rem;
   }
+  .drop-down-menu{
+    width: 15%;
+    text-align: start;
+    padding-inline-start: 1.5rem;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 115px;
+  }
+  .products{
+    right: 810px;
+  }
+  .company{
+    right: 575px;
+  }
+  .connect{
+    right: 360px;
+  }
 }
 @media screen and (min-width: 1440px){
   #root{
@@ -360,6 +378,15 @@ hr{
   .header{
     padding: 2rem 10rem;
   }
+  .header__buttons{
+    margin-block-end: 8rem;
+  }
+  .header__h1{
+    margin-block-start: 4rem;
+  }
+  .main__info .main__designed-h2{
+    margin-block-start: 8rem;
+  }
   .editor-illustration,
   .laptop-illustration{
     min-width: 700px;
@@ -367,6 +394,9 @@ hr{
   .main__info section,
   .main__features section{
     padding-inline: 2.75rem;
+  }
+  .main__illustration{
+    margin-block: 5rem;
   }
   .main__illustration section{
     margin-inline-start: 40%;

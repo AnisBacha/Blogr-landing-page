@@ -10,9 +10,12 @@ const NavMenu = ({isLiOpen, setIsLiOpen, windowWidth}) => {
     `
     return (
         <section className='header__navbar'>
-            <ul>
+            <section className='header__list'>
                 <div onClick={() => setIsLiOpen({...isLiOpen, products: !isLiOpen.products})}>
-                    <li>Product</li>
+                    <ul>
+                        <li>Product</li>
+                    </ul>
+                    
                     {windowWidth < 1024 ? (
                         <img 
                             src={require('./images/icon-arrow-dark.svg').default} 
@@ -35,18 +38,20 @@ const NavMenu = ({isLiOpen, setIsLiOpen, windowWidth}) => {
                     
                 )}
                 <div onClick={() => setIsLiOpen({...isLiOpen, company: !isLiOpen.company})}>
-                    <li>Company</li>
+                    <ul>
+                        <li>Company</li>
+                    </ul>
                     {windowWidth < 1024 ? (
                         <img 
                             src={require('./images/icon-arrow-dark.svg').default} 
                             alt='arrow' 
-                            className={`arrow-${isLiOpen.products}`}
+                            className={`arrow-${isLiOpen.company}`}
                         />
                     ) : (
                         <img 
                             src={require('./images/icon-arrow-light.svg').default} 
                             alt='arrow' 
-                            className={`arrow-${isLiOpen.products}`}
+                            className={`arrow-${isLiOpen.company}`}
                         />
                     )}
                 </div>
@@ -58,18 +63,20 @@ const NavMenu = ({isLiOpen, setIsLiOpen, windowWidth}) => {
                     
                 )}
                 <div onClick={() => setIsLiOpen({...isLiOpen, connect: !isLiOpen.connect})}>
-                    <li>Connect</li>
+                    <ul>
+                        <li>Connect</li>
+                    </ul>
                     {windowWidth < 1024 ? (
                         <img 
                             src={require('./images/icon-arrow-dark.svg').default} 
                             alt='arrow' 
-                            className={`arrow-${isLiOpen.products}`}
+                            className={`arrow-${isLiOpen.connect}`}
                         />
                     ) : (
                         <img 
                             src={require('./images/icon-arrow-light.svg').default} 
                             alt='arrow' 
-                            className={`arrow-${isLiOpen.products}`}
+                            className={`arrow-${isLiOpen.connect}`}
                         />
                     )}
                 </div>
@@ -79,7 +86,7 @@ const NavMenu = ({isLiOpen, setIsLiOpen, windowWidth}) => {
                         <Connect />
                     </>
                 )}
-            </ul>
+            </section>
             {windowWidth < 1024 && (
                 <hr></hr>
             )}
